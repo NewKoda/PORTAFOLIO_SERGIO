@@ -29,7 +29,7 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #1CB698;
+    color: #4da8cf;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -46,10 +46,10 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #1CB698;
+    color: #4da8cf;
 }
 .nav-responsive{
-    background-color: #1CB698;
+    background-color: #4da8cf;
     color:#fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -65,6 +65,45 @@ html{
     display: flex;
     align-items: center;
 }
+.visor-pdf {
+    margin: 20px 0; /* Espaciado entre cada visor de PDF */
+    padding: 15px;
+    background-color: #f9f9f9; /* Color de fondo suave */
+    border: 1px solid #ddd; /* Borde del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.visor-pdf h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Color del texto del título */
+    text-align: center; /* Centrar el texto del título */
+}
+
+.visor-pdf iframe {
+    width: 100%; /* Asegura que ocupe el ancho completo del contenedor */
+    height: 600px; /* Altura del visor del PDF */
+    border: none; /* Elimina bordes adicionales */
+}
+
+.visor-pdf a {
+    display: block;
+    margin-top: 10px;
+    text-align: center; /* Centra el enlace de descarga */
+    color: #007BFF; /* Color azul para el enlace */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-weight: bold;
+}
+
+.visor-pdf a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+    color: #0056b3; /* Color más oscuro en el hover */
+}
+
+
+
 .inicio .contenido-banner{
     padding: 20px;
     background-color: #1e2326;
@@ -104,7 +143,7 @@ html{
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #1CB698;
+    background-color: #4da8cf;
 }
 .sobremi{
     background-color: #1e2326;
@@ -128,7 +167,7 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #1CB698;
+    color: #4da8cf;
     font-weight: bold;
 }
 .sobremi .fila{
@@ -151,11 +190,11 @@ html{
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
-    color: #1CB698;
+    color: #4da8cf;
     width: 130px;
 }
 .sobremi .fila .col ul li span{
-    background-color: #1CB698;
+    background-color: #4da8cf;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -175,8 +214,10 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #1CB698;
+    font-size: 11px; /* Añade esta línea para cambiar el tamaño de la letra */
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #4da8cf;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
@@ -190,7 +231,7 @@ html{
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     position: relative;
     z-index: 10;
@@ -201,7 +242,7 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #4da8cf;
     z-index: -1;
     transition: 1s;
 }
@@ -254,30 +295,30 @@ html{
     margin-bottom: 10px;
 }
 .curriculum .fila .item .casa{
-    color: #1CB698;
+    color: #4da8cf;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
 .curriculum .fila .item .fecha{
     display: block;
-    color: #1CB698;
+    color: #4da8cf;
     margin-bottom: 10px;
 }
 .curriculum .fila .item p{
     line-height: 24px;
 }
 .curriculum .fila .izq{
-    border-right: 2px solid #1CB698;
+    border-right: 2px solid #4da8cf;
     margin-right: 20px;
 }
 .curriculum .fila .der{
-    border-left: 2px solid #1CB698;
+    border-left: 2px solid #4da8cf;
     margin-left: 20px;
 }
 .curriculum .fila .item .conectori{
     height: 2px;
-    background-color: #1CB698;
+    background-color: #4da8cf;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -289,14 +330,14 @@ html{
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1CB698;
+    background-color: #4da8cf;
     float: right;
     position: relative;
     bottom: 4px;
 }
 .curriculum .fila .item .conectord{
     height: 2px;
-    background-color: #1CB698;
+    background-color: #4da8cf;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -308,7 +349,7 @@ html{
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1CB698;
+    background-color: #4da8cf;
     float: left;
     position: relative;
     bottom: 4px;
@@ -323,10 +364,8 @@ html{
     margin: auto;
 }
 .portfolio h2{
-    font-size: 48px;
-    font-family: 'Righteous';
+    font-size: 56px; /* Ajusta el tamaño de la letra según sea necesario */
     text-align: center;
-    padding: 20px 0;
 }
 .portfolio .galeria{
     display: flex;
@@ -369,6 +408,64 @@ html{
 .portfolio .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
 }
+.portfolio .contenido-seccion .subseccion .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Ajusta el espacio entre los cuadros según sea necesario */
+}
+
+.portfolio .contenido-seccion .subseccion .galeria .proyecto {
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta el tamaño de los cuadros según sea necesario */
+    margin: 5px; /* Ajusta el margen para crear espacio entre los cuadros */
+    box-sizing: border-box;
+    border: 2px solid #4da8cf; /* Añade un borde para el cuadro de separación */
+}
+
+.portfolio .contenido-seccion .subseccion .galeria .proyecto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio .contenido-seccion .subseccion .galeria .proyecto .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el color de fondo y la opacidad según sea necesario */
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio .contenido-seccion .subseccion .galeria .proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio .contenido-seccion .subseccion .galeria .proyecto .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.portfolio .contenido-seccion .subseccion .galeria .proyecto .overlay:hover h3 {
+    margin-bottom: 0px;
+}
+
+.portfolio .subseccion h3 {
+    font-size: 36px; /* Ajusta el tamaño de la letra según sea necesario */
+    text-align: center;
+    margin-bottom: 40px; /* Ajusta este valor según sea necesario */
+}
+
 footer{
     background-color: #252A2E;
     color: #fff;
@@ -397,7 +494,7 @@ footer .arriba{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1CB698;
+    background-color: #4da8cf;
     color: #fff;
     position: absolute;
     left: 50%;
