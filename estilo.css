@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     font-family: 'Work Sans';
     margin: 0;
     padding: 0;
 }
-html{
-    /* me permite deslizar cuando hago clic en los links del menu */
+
+html {
     scroll-behavior: smooth;
 }
-.contenedor-header{
+
+/* Contenedor Header */
+.contenedor-header {
     background: #000000;
     position: fixed;
     width: 100%;
@@ -18,7 +20,8 @@ html{
     left: 0;
     z-index: 99;
 }
-.contenedor-header header{
+
+.contenedor-header header {
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -26,18 +29,20 @@ html{
     align-items: center;
     padding: 15px 20px;
 }
-.contenedor-header header .logo a{
+
+.contenedor-header header .logo a {
     font-family: 'Righteous';
     font-size: 36px;
     color: #4da8cf;
     text-decoration: none;
 }
-.contenedor-header header ul{
+
+.contenedor-header header ul {
     display: flex;
     list-style: none;
 }
 
-.contenedor-header header nav ul li a{
+.contenedor-header header nav ul li a {
     text-align: none;
     color: #fff;
     margin: 0 15px;
@@ -45,66 +50,31 @@ html{
     transition: .5s;
     text-decoration: none;
 }
-.contenedor-header header nav ul li a:hover{
+
+.contenedor-header header nav ul li a:hover {
     color: #4da8cf;
 }
-.nav-responsive{
+
+.nav-responsive {
     background-color: #4da8cf;
-    color:#fff;
+    color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
 }
-.inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(img/fondo.jpg);
+
+/* Inicio */
+.inicio {
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(img/fondo.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
     display: flex;
     align-items: center;
 }
-.visor-pdf {
-    margin: 20px 0; /* Espaciado entre cada visor de PDF */
-    padding: 15px;
-    background-color: #f9f9f9; /* Color de fondo suave */
-    border: 1px solid #ddd; /* Borde del contenedor */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
 
-.visor-pdf h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333; /* Color del texto del título */
-    text-align: center; /* Centrar el texto del título */
-}
-
-.visor-pdf iframe {
-    width: 100%; /* Asegura que ocupe el ancho completo del contenedor */
-    height: 600px; /* Altura del visor del PDF */
-    border: none; /* Elimina bordes adicionales */
-}
-
-.visor-pdf a {
-    display: block;
-    margin-top: 10px;
-    text-align: center; /* Centra el enlace de descarga */
-    color: #007BFF; /* Color azul para el enlace */
-    text-decoration: none; /* Quita el subrayado del enlace */
-    font-weight: bold;
-}
-
-.visor-pdf a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
-    color: #0056b3; /* Color más oscuro en el hover */
-}
-
-
-
-.inicio .contenido-banner{
+.inicio .contenido-banner {
     padding: 20px;
     background-color: #1e2326;
     max-width: 350px;
@@ -112,24 +82,28 @@ html{
     text-align: center;
     border-radius: 40px;
 }
-.inicio .contenido-banner img{
+
+.inicio .contenido-banner img {
     margin-top: 40px;
-    border: 10px solid #1CB698;
+    border: 10px solid #4da8cf;
     display: block;
     width: 80%;
     margin: auto;
     border-radius: 100%;
 }
-.inicio .contenido-banner h1{
+
+.inicio .contenido-banner h1 {
     margin-top: 40px;
     font-size: 42px;
     font-family: 'Righteous';
 }
-.inicio .contenido-banner h2{
+
+.inicio .contenido-banner h2 {
     font-size: 15px;
     font-weight: normal;
 }
-.inicio .contenido-banner .redes a{
+
+.inicio .contenido-banner .redes a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -142,68 +116,120 @@ html{
     font-size: 20px;
     transition: .3s;
 }
-.inicio .contenido-banner .redes a:hover{
+
+.inicio .contenido-banner .redes a:hover {
     background-color: #4da8cf;
 }
-.sobremi{
+
+/* Visor PDF */
+.visor-pdf {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.visor-pdf h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.visor-pdf iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+.visor-pdf a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.visor-pdf a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Sobre Mi */
+.sobremi {
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.sobremi .contenido-seccion{
+
+.sobremi .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.sobremi h2{
+
+.sobremi h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
-.sobremi .contenido-seccion p{
+
+.sobremi .contenido-seccion p {
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
 }
-.sobremi .contenido-seccion p span{
+
+.sobremi .contenido-seccion p span {
     color: #4da8cf;
     font-weight: bold;
 }
-.sobremi .fila{
+
+.sobremi .fila {
     display: flex;
 }
-.sobremi .fila .col
-{
+
+.sobremi .fila .col {
     width: 50%;
 }
-.sobremi .fila .col h3{
+
+.sobremi .fila .col h3 {
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.sobremi .fila .col ul{
+
+.sobremi .fila .col ul {
     list-style: none;
 }
-.sobremi .fila .col ul li{
+
+.sobremi .fila .col ul li {
     margin: 12px 0;
 }
-.sobremi .fila .col ul li strong{
+
+.sobremi .fila .col ul li strong {
     display: inline-block;
     color: #4da8cf;
     width: 130px;
 }
-.sobremi .fila .col ul li span{
+
+.sobremi .fila .col ul li span {
     background-color: #4da8cf;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
 }
-.sobremi .fila .col .contenedor-intereses{
+
+.sobremi .fila .col .contenedor-intereses {
     display: flex;
     flex-wrap: wrap;
 }
-.sobremi .fila .col .contenedor-intereses .interes{
+
+.sobremi .fila .col .contenedor-intereses .interes {
     width: 100px;
     height: 100px;
     background-color: #252A2E;
@@ -214,16 +240,19 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
-    font-size: 11px; /* Añade esta línea para cambiar el tamaño de la letra */
+    font-size: 11px;
 }
-.sobremi .fila .col .contenedor-intereses .interes:hover{
+
+.sobremi .fila .col .contenedor-intereses .interes:hover {
     background-color: #4da8cf;
 }
-.sobremi .fila .col .contenedor-intereses .interes i{
+
+.sobremi .fila .col .contenedor-intereses .interes i {
     font-size: 30px;
     margin-bottom: 10px;
 }
-.sobremi button{
+
+.sobremi button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -236,7 +265,8 @@ html{
     position: relative;
     z-index: 10;
 }
-.sobremi button .overlay{
+
+.sobremi button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -246,77 +276,94 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.sobremi button:hover .overlay{
+
+.sobremi button:hover .overlay {
     width: 100%;
 }
-.curriculum{
+
+/* Curriculum */
+.curriculum {
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.curriculum .contenido-seccion{
+
+.curriculum .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.curriculum h2{
+
+.curriculum h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
-.curriculum .fila{
+
+.curriculum .fila {
     display: flex;
     justify-content: space-between;
 }
-.curriculum .fila .col{
+
+.curriculum .fila .col {
     width: 49%;
     padding: 0 20px;
 }
-.curriculum .fila .col h3{
+
+.curriculum .fila .col h3 {
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.curriculum .fila .izquierda{
+
+.curriculum .fila .izquierda {
     border-right: 2px solid #252A2E;
 }
-.curriculum .fila .derecha{
+
+.curriculum .fila .derecha {
     border-left: 2px solid #252A2E;
 }
-.curriculum .fila .item{
+
+.curriculum .fila .item {
     padding: 25px;
     margin-bottom: 30px;
     background-color: #252A2E;
     position: relative;
 }
-.curriculum .fila .item h4{
+
+.curriculum .fila .item h4 {
     font-size: 20px;
     margin-bottom: 10px;
 }
-.curriculum .fila .item .casa{
+
+.curriculum .fila .item .casa {
     color: #4da8cf;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
-.curriculum .fila .item .fecha{
+
+.curriculum .fila .item .fecha {
     display: block;
     color: #4da8cf;
     margin-bottom: 10px;
 }
-.curriculum .fila .item p{
+
+.curriculum .fila .item p {
     line-height: 24px;
 }
-.curriculum .fila .izq{
+
+.curriculum .fila .izq {
     border-right: 2px solid #4da8cf;
     margin-right: 20px;
 }
-.curriculum .fila .der{
+
+.curriculum .fila .der {
     border-left: 2px solid #4da8cf;
     margin-left: 20px;
 }
-.curriculum .fila .item .conectori{
+
+.curriculum .fila .item .conectori {
     height: 2px;
     background-color: #4da8cf;
     width: 47px;
@@ -325,7 +372,8 @@ html{
     right: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectori .circuloi{
+
+.curriculum .fila .item .conectori .circuloi {
     display: block;
     height: 10px;
     width: 10px;
@@ -335,7 +383,8 @@ html{
     position: relative;
     bottom: 4px;
 }
-.curriculum .fila .item .conectord{
+
+.curriculum .fila .item .conectord {
     height: 2px;
     background-color: #4da8cf;
     width: 47px;
@@ -344,7 +393,8 @@ html{
     left: -47px;
     z-index: 5;
 }
-.curriculum .fila .item .conectord .circulod{
+
+.curriculum .fila .item .conectord .circulod {
     display: block;
     height: 10px;
     width: 10px;
@@ -354,36 +404,44 @@ html{
     position: relative;
     bottom: 4px;
 }
-.portfolio{
+
+/* Portfolio */
+.portfolio {
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
 }
-.portfolio .contenido-seccion{
+
+.portfolio .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.portfolio h2{
-    font-size: 56px; /* Ajusta el tamaño de la letra según sea necesario */
+
+.portfolio h2 {
+    font-size: 56px;
     text-align: center;
 }
-.portfolio .galeria{
+
+.portfolio .galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.portfolio .galeria .proyecto{
+
+.portfolio .galeria .proyecto {
     position: relative;
     max-width: 340px;
     height: fit-content;
     margin: 10px;
     cursor: pointer;
 }
-.portfolio .galeria .proyecto img{
+
+.portfolio .galeria .proyecto img {
     width: 100%;
     display: block;
 }
-.portfolio .galeria .proyecto .overlay{
+
+.portfolio .galeria .proyecto .overlay {
     position: absolute;
     top: 0;
     width: 100%;
@@ -398,29 +456,33 @@ html{
     letter-spacing: 3px;
     opacity: 0;
 }
-.portfolio .galeria .proyecto .overlay h3{
+
+.portfolio .galeria .proyecto .overlay h3 {
     margin-bottom: 20px;
     transition: 1s;
 }
-.portfolio .galeria .proyecto .overlay:hover{
+
+.portfolio .galeria .proyecto .overlay:hover {
     opacity: 1;
 }
-.portfolio .galeria .proyecto .overlay:hover h3{
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
     margin-bottom: 0px;
 }
+
 .portfolio .contenido-seccion .subseccion .galeria {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Ajusta el espacio entre los cuadros según sea necesario */
+    gap: 20px;
 }
 
 .portfolio .contenido-seccion .subseccion .galeria .proyecto {
     position: relative;
     overflow: hidden;
-    flex: 1 1 calc(33.333% - 20px); /* Ajusta el tamaño de los cuadros según sea necesario */
-    margin: 5px; /* Ajusta el margen para crear espacio entre los cuadros */
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 5px;
     box-sizing: border-box;
-    border: 2px solid #4da8cf; /* Añade un borde para el cuadro de separación */
+    border: 2px solid #4da8cf;
 }
 
 .portfolio .contenido-seccion .subseccion .galeria .proyecto img {
@@ -440,7 +502,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el color de fondo y la opacidad según sea necesario */
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-align: center;
     opacity: 0;
@@ -461,12 +523,13 @@ html{
 }
 
 .portfolio .subseccion h3 {
-    font-size: 36px; /* Ajusta el tamaño de la letra según sea necesario */
+    font-size: 36px;
     text-align: center;
-    margin-bottom: 40px; /* Ajusta este valor según sea necesario */
+    margin-bottom: 40px;
 }
 
-footer{
+/* Footer */
+footer {
     background-color: #252A2E;
     color: #fff;
     padding: 50px 0 30px 0;
@@ -474,10 +537,12 @@ footer{
     position: relative;
     width: 100%;
 }
-footer .redes{
+
+footer .redes {
     margin-bottom: 20px;
 }
-footer .redes a{
+
+footer .redes a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -490,7 +555,8 @@ footer .redes a{
     font-size: 20px;
     transition: .3s;
 }
-footer .arriba{
+
+footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
@@ -504,14 +570,18 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
-@media screen and (max-width:980px){
-    nav{
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+    nav {
         display: none;
     }
-    .nav-responsive{
+
+    .nav-responsive {
         display: block;
     }
-    nav.responsive{
+
+    nav.responsive {
         display: block;
         position: absolute;
         right: 0;
@@ -519,56 +589,68 @@ footer .arriba{
         background-color: #252A2E;
         width: 180px;
     }
-    nav.responsive ul{
+
+    nav.responsive ul {
         display: block !important;
     }
-    nav.responsive ul li{
+
+    nav.responsive ul li {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
 }
-@media screen and (max-width:700px){
-    .sobremi .fila{
+
+@media screen and (max-width: 700px) {
+    .sobremi .fila {
         display: block;
     }
-    .sobremi .fila .col{
+
+    .sobremi .fila .col {
         width: fit-content;
     }
 
-    .skills .fila{
+    .skills .fila {
         display: block;
     }
-    .skills .fila .col{
-        width: 100%;
-    }
-    .skills .fila .col .barra-skill{
+
+    .skills .fila .col {
         width: 100%;
     }
 
-    .curriculum .fila{
+    .skills .fila .col .barra-skill {
+        width: 100%;
+    }
+
+    .curriculum .fila {
         display: block;
     }
-    .curriculum .fila .col{
+
+    .curriculum .fila .col {
         width: 90%;
     }
-    .curriculum .fila .derecha{
+
+    .curriculum .fila .derecha {
         margin-left: 20px;
     }
 
-    .portfolio .galeria{
+    .portfolio .galeria {
         display: block;
         width: 100%;
     }
-    .portfolio .galeria .proyecto{
+
+    .portfolio .galeria .proyecto {
         max-width: 100%;
     }
-    .portfolio .galeria .proyecto img{
+
+    .portfolio .galeria .proyecto img {
         width: 100%;
     }
-    .contacto .fila{
+
+    .contacto .fila {
         display: block;
     }
-    .contacto .fila .col{
+
+    .contacto .fila .col {
         width: 100%;
     }
 }
